@@ -1,0 +1,51 @@
+Node js intall 
+1-Download node.js
+2-install node.js
+3-Open cmd and check version of node with command node -v
+4-check npm version npm -v
+5-for Install express open cmd npm install expess -generator -g
+6-for Mongo download (download mongo)
+7-install mongo create data and in data create db folder in C drive 
+8-for mongo using globally install using set path mongodb path in (Mycomputer>properties>Advanced>Environment variables and set path)  
+9-Nodejs is installed
+
+Using Passport Authentication
+1-Create a folder with name like (passportlogin)
+2-open (passportlogin) folder in cmd and run command npm init
+3-npm init create a file package.json
+4-open package.json and write dependencies like 
+"dependencies" : {
+    "express" : "~4.0.0",           
+    "ejs" : "~0.8.5",               
+    "mongoose" : "~3.8.1",          
+    "passport" : "~0.1.17",         
+    "passport-local" : "~0.1.6",    
+    "passport-facebook" : "~1.0.2", 
+    "passport-twitter" : "~1.0.2",  
+    "passport-google-oauth" : "~0.1.5",
+    "connect-flash" : "~0.1.1",     
+    "bcrypt-nodejs" : "latest",
+
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-session": "~1.0.0"     
+  }
+   Express is the framework.
+   Ejs is the templating engine.
+   Mongoose is object modeling for our MongoDB database.
+   Passport stuff will help us authenticating with different methods.
+   Connect-flash allows for passing session flashdata messages.
+   Bcrypt-nodejs gives us the ability to hash the password
+
+
+5-open cmd run command npm install
+6-npm install create a node_modules file inside (passportlogin) folder.All dependencies is inside the node_modules models.
+7- we have create a bin,Model,public,routes,views folders and create index.js file.
+8-In model folder create all schema file
+9-IN bin folder create www file and create database connection.
+10-In views folder create all view pages 
+11-In Public folder create images,javascripts,stylesheets,javascripts folder.
+12-In routes folder create connnection between model and views.
+change or create for using npm start

@@ -1,0 +1,61 @@
+1-In httpd.config
+ScriptAlias /cgi-bin/ "D:/XAMPP/cgi-bin/" after add  
+Alias /bugzilla/ "C:/bugzilla/"
+
+<Directory "D:/XAMPP/cgi-bin">
+    AllowOverride All
+    Options None
+    Require all granted
+</Directory>
+
+after add
+
+<Directory "C:/bugzilla">
+    ScriptInterpreterSource Registry-Strict
+    Options +ExecCGI +FollowsymLinks
+    DirectoryIndex index.cgi index.html
+    AllowOverride All
+    Require all granted
+</Directory>
+
+2-In my.ini
+max_allowed_packet = 1M to 16M
+ft_min_word_len=2
+
+
+CREATE DATABASE 'db_bugzilla'
+DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE USER 'bugzilla-owner'@'localhost';
+CREATE USER 'bugzilla-owner'@'127.0.0.1';
+CREATE USER 'bugzilla-owner'@'::1';
+
+SET PASSWORD
+FOR 'bugzilla-owner'@'localhost' = PASSWORD('bugzilla12345$%');
+SET PASSWORD
+FOR 'bugzilla-owner'@'127.0.0.1' = PASSWORD('bugzilla12345$%');
+SET PASSWORD
+FOR 'bugzilla-owner'@'::1' = PASSWORD('bugzilla12345$%');
+
+GRANT ALL PRIVILEGES ON
+'bugzilla'.* TO 'bugzilla-owner'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON
+'bugzilla'.* TO 'bugzilla-owner'@'127.0.0.1' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON
+'bugzilla'.* TO 'bugzilla-owner'@'::1' WITH GRANT OPTION;
+
+
+
+perl checksetup.pl
+
+
+
+ppm install DBD-mysql
+ppm install TimeDate
+ppm install Template-Toolkit
+ppm install Email-Sender
+ppm install Email-MIME
+ppm install Math-Random-ISAAC
+ppm install file-slurp
+ppm install JSON-XS
+ppm install DateTime-TimeZone-Local-Win32

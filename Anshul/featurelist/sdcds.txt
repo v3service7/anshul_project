@@ -1,0 +1,38 @@
+sdcds.org
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My Bookings
+Customer - My Dentist 
+Customer - My schedule a visit
+
+
+Browse/Search Dentist based on city,zipcode,distance and types
+Membership plan listing page with benefits lists pages
+CE/Events listing pages
+Foundation pages
+Job Bank page with resume bank,job posting, submit your resume and submit a job posting section and also section for user for search dentist
+Resources  with for members and for public section
+static page for members section like DEntal board,American DEntal Association,california denatal Associtaion 
+static page for public find a dentist,dentical,classified,flouridation,continuing education,carrer in dentists
+Static Pages like about us, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Cities
+Admin - Manage Customers
+Admin - Manage membership plan
+Admin - Manage Visits
+Admin - Manage Jobs
+Admin - Manage Resumes
+Admin - Manage Website Global Settings
+Admin - Manage Content of Static pages like about us, How it works,for members,for public etc.

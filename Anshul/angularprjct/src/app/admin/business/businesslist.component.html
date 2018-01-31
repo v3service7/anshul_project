@@ -1,0 +1,41 @@
+<div class="card card-nav-tabs">
+    <div class="card-header" data-background-color="orange">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <span class="nav-tabs-title">Business List of "{{currentCustomer.firstname}} {{currentCustomer.lastname}}"</span>
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active pull-right">
+                
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-content table-responsive">
+        <table class="table" *ngIf="businesses.length >0">
+            <thead class="text-warning">
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of businesses">
+                    <td class="padding0">{{customer.firstname}} {{customer.lastname}}</td>
+                    <td class="padding0">{{customer.phonenumber}}</td>
+                    <td class="padding0 td-actions text-right">
+                        <a [routerLink]="['/admin/customer/',customer._id]" rel="tooltip" title="Business Detail" class="btn btn-primary btn-simple btn-xs">
+                            <i class="material-icons">business</i>
+                        </a>
+                        <a [routerLink]="['/admin/customer/',customer._id]" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                            <i class="material-icons">edit</i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="alert alert-primary" *ngIf="businesses.length == 0">
+            <button type="button" aria-hidden="true" class="close">×</button>
+            <span> <b> No Data - </b> Business Empty  of "{{currentCustomer.firstname}} {{currentCustomer.lastname}}"</span>
+        </div>
+    </div>
+</div>

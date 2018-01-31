@@ -1,0 +1,58 @@
+lawrato.com
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My Bookings
+Customer - My Questions 
+
+Lawyer Registration 
+Lawyer - Login/ Logout/ Forgot Password/ Change Password
+Lawyer - My Profile
+Lawyer - My Account with Payment Report
+Lawyer - My Services and Fee
+Lawyer - My Schedule
+Lawyer - View/Reply Questions
+Lawyer - Manage Bookings
+
+Browse/Search Lawyers based on category and Location
+Lawyers Listing
+Filter and Sort Option
+Lawyer Detail Page
+View/Post Reviews
+Contact Lawyer
+Book Consultation for Phone, Meeting, EMail
+Bookig Process
+Payment Process
+Email Notifications
+Contact Us with Captcha
+FAQs Section
+Legal Advice Section
+Legal Services Section
+Legal Notices Section
+Static Pages like about us, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Categories and Sub-Categories
+Admin - Manage Cities
+Admin - Manage Lawyers
+Admin - Manage Customers
+Admin - Manage FAQs Categories
+Admin - Manage FAQs
+Admin - Manage Legal Advice
+Admin - Manage Legal Services
+Admin - Manage Legal Notices
+Admin - View Questions
+Admin - View Booking Report
+Admin - View Payment Report
+Admin - Manage Website Global Settings like Commissions etc.
+Admin - Manage Content of Static pages like about us, How it works etc.

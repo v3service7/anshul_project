@@ -1,0 +1,50 @@
+kayak.co.in
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My Bookings
+Customer - My Preferences
+Customer - My Email & Alerts
+Customer - My Payment methods
+Customer - My Trips setting 
+Customer - My History
+Customer - Delete Account
+
+
+Browse/Search hotels,flights,cars based on category,Location,time,day,number of travellers,number of bed,return,one-way,multi-city
+City listing
+Filter and Sort Option
+Hotels deatails page
+Flights detail page 
+Cars details page
+Flight+Hotel detail page
+Rentals details page 
+More page with Explore,flight tracker, help,mobile section page
+follow us page
+payment process
+currency and language change section
+Static Pages like about us,careers,blog,mobile,How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Categories and Sub-Categories
+Admin - Manage Cities
+Admin - Manage Customers
+Admin - Manage Email & Alerts
+Admin - Manage Trips setting
+Admin - Manage Bookings
+Admin - Manage Hotels
+Admin - Manage Flights
+Admin - View cars
+Admin - View Booking Report
+Admin - View Payment Report
+Admin - Manage Content of Static pages like about us, How it works etc.

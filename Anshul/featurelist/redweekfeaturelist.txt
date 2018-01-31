@@ -1,0 +1,50 @@
+Admin
+Admin-Manage Users
+Admin-Mange selling and rental property
+Admin-Manage property 
+Admin-MAnage Account
+Admin-Manage congifragion setting
+Admin-manage Member plan
+Admin-Manage content
+Admin-MAnage contact records
+Admin-Manage Forums
+Admin-Manage resources
+
+
+Manage home page wiyh searching
+RENT OR SELL MY TIMESHARE
+find a timeshare with all coutries name page with dropdown like find companies,region resale,rental
+search 
+resources
+forums
+register free and also paid plans
+our patners
+login,register
+login with facebook,twitter,google
+follow us on fb,our blog,linked in,youtube,g+,twitter
+share on fb,twitter,google
+contact us
+static pages-About us,FAQs,How to rent a timeshare,How to sell a timeshare,How to buy a timeshare
+
+
+Users
+
+User-login,logout,register,forget password
+user-login with facebook,google
+user-manage membership
+user-dashboard
+user-manage profile
+user-manage rental properties
+user-manage rent 
+user-manage setting
+user-manage invoices
+
+owner
+
+owner-login,logout,register,forget password
+owner-login with facebook,google
+owner-dashboard
+owner-manage profile
+owner-manage selling property
+owner-manage account
+owner-manage invoices

@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Udate Exchange Account</h4>
+                <p class="category">Create Exchange Account for user</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="planUpdate()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Name <span>*</span></label>
+                                <select  formControlName="user" class="form-control">
+                                    <option *ngFor="let user of users" [value]="user._id">{{user.firstname}}</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.user" class="alert alert-danger">
+                                {{ formErrors.user }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Nick Name</label>
+                                <input formControlName="nickName" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.nickName" class="alert alert-danger">
+                                {{ formErrors.nickName }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Exchange Name <span>*</span></label>
+                                <select  formControlName="exchangeName" class="form-control">
+                                    <option *ngFor="let exchangeName of exchangeNames" [value]="exchangeName">{{exchangeName}}</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.exchangeName" class="alert alert-danger">
+                                {{ formErrors.exchangeName }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Exchange Type <span>*</span></label>
+                                <select  formControlName="exchangeType" class="form-control">
+                                    <option *ngFor="let exchangeType of exchangeTypes" [value]="exchangeType">{{exchangeType}}</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.exchangeType" class="alert alert-danger">
+                                {{ formErrors.exchangeType }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">API key</label>
+                                <input formControlName="apiKey" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.apiKey" class="alert alert-danger">
+                                {{ formErrors.apiKey }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Secret Key</label>
+                                <input formControlName="secretKey" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.secretKey" class="alert alert-danger">
+                                {{ formErrors.secretKey }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!planAddForm.valid">Update Exchange Account</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

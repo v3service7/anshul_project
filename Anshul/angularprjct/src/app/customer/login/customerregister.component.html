@@ -1,0 +1,83 @@
+<div class="wrapper wrapper-full-page">
+    <div class="full-page login-page" filter-color="black" data-image="../../assets/img/login.jpeg">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        <form [formGroup]="registerForm" (ngSubmit)="register()">
+                            <div class="card card-login">
+                                <div class="card-header text-center" data-background-color="green">
+                                    <h4 class="card-title">Customer Register</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">email</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Email</label>
+                                            <input type="text" class="form-control" formControlName="email">
+                                            <span class="material-input"></span>
+                                        </div>
+                                        <div *ngIf="formErrors.email" class="alert alert-danger">
+                                            {{ formErrors.email }}
+                                        </div>
+                                        <div *ngIf="err != ''" class="alert alert-danger">
+                                            {{ err }}
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">phone</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Mobile Number</label>
+                                            <input type="text" class="form-control" formControlName="phonenumber">
+                                            <span class="material-input"></span>
+                                        </div>
+                                        <div *ngIf="formErrors.phonenumber" class="alert alert-danger">
+                                            {{ formErrors.phonenumber }}
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">lock_outline</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Password</label>
+                                            <input type="password" class="form-control" formControlName="password" (keyup)="matchpasswordreg()">
+                                            <span class="material-input"></span>
+                                        </div>
+                                        <div *ngIf="formErrors.password" class="alert alert-danger">
+                                            {{ formErrors.password }}
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">lock_outline</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Confirm Password</label>
+                                            <input type="password" class="form-control" formControlName="newpassword" (keyup)="matchpasswordreg()">
+                                            <span class="material-input"></span>
+                                        </div>
+                                        <div *ngIf="formErrors.newpassword" class="alert alert-danger">
+                                            {{ formErrors.newpassword }}
+                                        </div>
+                                        <div class="alert alert-danger" *ngIf="MutchPassword">Password not match</div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <button class="btn btn-success btn-wd btn-lg progress-button" id="submitButton" [disabled]="!registerForm.valid">Let's go</button>
+                                    <a class="btn btn-success btn-simple btn-wd btn-lg" [routerLink]="['/customer/login']">Login</a>
+                                    <a class="btn btn-success btn-simple btn-wd btn-lg" [routerLink]="['/customer/forget-password']">Forget Password ?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

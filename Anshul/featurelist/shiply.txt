@@ -1,0 +1,45 @@
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Companies Login
+Companies - Login/ Logout/ Forgot Password/ Change Password
+Companies - My Profile
+Companies - Upload Orders
+Companies - Tracking 
+Companies - Billing
+Companies - Rate calculation
+Companies - Download label/invoice
+Companies - setting
+Companies - Update order status 
+
+
+
+transport companies login
+seach based on services
+search deliveries detail page 
+Services with furniture delivery,motorcycle transport, car transport, haulage, ebay courier, courier 
+services,removal companies, removals, man and van, man with a van,large goods transport,boat transport with deatil page 
+Contact Us 
+FAQs Section
+Static Pages like about us, How it works etc.
+sitemap
+SEO Friendly URLs
+payment gateway integration
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage States
+Admin - Manage Cities
+Admin - Manage companies
+Admin - Manage Orders
+Admin - Manage services
+Admin - Manage order report
+Admin - Manage Invoice and billing
+Admin - View Payment Report
+Admin - Manage Website Global Settings like Commissions etc.
+Admin - Manage Content of Static pages like about us, How it works etc.

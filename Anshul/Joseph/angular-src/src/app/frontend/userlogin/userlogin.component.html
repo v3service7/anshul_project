@@ -1,0 +1,21 @@
+
+<header class="login-header">
+    <div class="container">
+        <div class="col-md-6 col-lg-5 mx-auto">
+            <div class="card card-body">
+                <h3 class="text-center mb-4">Login</h3>
+                
+                <form (submit)="onLoginSubmit()">
+                    <div class="form-group has-error">
+                        <input class="form-control input-lg" [(ngModel)]="username" placeholder="Username" name="username" type="text">
+                    </div>
+                    <div class="form-group has-success">
+                        <input class="form-control input-lg" [(ngModel)]="password" placeholder="Password" name="password" value="" type="password">
+                    </div>
+                    <input class="btn btn-lg btn-success btn-block" value="Login" type="submit">
+                </form>
+                <a [routerLink]="['/forgotpassword']" class="text-success mt-4" style="text-transform: uppercase;">Forgot Password ?</a>
+            </div>
+        </div>
+    </div>
+</header>

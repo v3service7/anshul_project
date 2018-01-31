@@ -1,0 +1,315 @@
+<section class="profile-header">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="card profile-card">
+                        <img class="card-img-top" src="https://www.w3schools.com/w3css/img_avatar2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                <a [ngClass]="setActive(isActive,'profile')" (click)="setActiveClass('profile')" class="nav-link text-white " id="v-pills-profile-tab" data-toggle="pill"  href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" >Profile</a>
+                                <a [ngClass]="setActive(isActive,'changePassword')" (click)="setActiveClass('changePassword')"  class="nav-link text-white" id="v-pills-chngpass-tab" data-toggle="pill" href="#v-pills-chngpass" role="tab" aria-controls="v-pills-profile" aria-selected="false">Change Password</a>
+                                <a [ngClass]="setActive(isActive,'exchange')" (click)="setActiveClass('exchange')"  class="nav-link text-white" id="v-pills-exchange-tab" data-toggle="pill" href="#v-pills-exchange" role="tab" aria-controls="v-pills-exchange" aria-selected="false">Manage Exchange</a>
+                                <a [ngClass]="setActive(isActive,'plans')" (click)="setActiveClass('plans')" class="nav-link text-white" id="v-pills-plan-tab" data-toggle="pill" href="#v-pills-plan" role="tab" aria-controls="v-pills-plan" aria-selected="true">Membership Plans</a>
+                                <a [ngClass]="setActive(isActive,'report')" (click)="setActiveClass('report')" class="nav-link text-white" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="true">My Account Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-9 col-sm-12">
+                    <div class="card profile-card">
+
+                        <div class="card-body ">
+                            <div class="tab-content" id="v-pills-tabContent">
+
+                                <!-- User Profile -->
+                                <div class="tab-pane fade active show" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <div class="card profile-card">
+                                        <h4 class="card-header text-white">Profile</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <form (submit)="onProfileSubmit()">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">First Name</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="firstname" name="firstname" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Last Name</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="lastname" name="lastname" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Email</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="email" name="email" type="email" >
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Phone</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="phonenumber" name="phonenumber" type="text" >
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Username</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="username" name="username" type="text" >
+                                                    </div>
+                                                </div>
+                                                
+                                                <input class="btn btn-sm  btn-success" value="Update" type="submit">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Change Password -->
+                                <div class="tab-pane fade show" id="v-pills-chngpass" role="tabpanel" aria-labelledby="v-pills-chngpass-tab">
+                                    <div class="card profile-card change-password-card">
+                                        <h4 class="card-header text-white">Change Password</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <form  (ngSubmit)="userChangePassword()">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Current Password</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control"  [(ngModel)]="password" name="password" type="password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">New Password</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="newpassword" name="newpassword" type="password">
+                                                    </div>
+                                                </div>                                                
+                                                <input class="btn btn-sm  btn-success" value="Update" type="submit">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <!-- Exchange List-->
+
+                                <div class="tab-pane fade show" id="v-pills-exchange" role="tabpanel" aria-labelledby="v-pills-exchange-tab">
+                                    <div class="card profile-card change-password-card">
+                                        <h4 class="card-header text-white">Manage Exchanges<span class="float-right btn-sm btn-primary"><a class="nav-link text-white " id="v-pills-addexchng-tab" data-toggle="pill" href="#v-pills-addexchng" role="tab" aria-controls="v-pills-addexchng" aria-selected="false" (click)= "clearform()">Add Exchange</a></span></h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <div class="card-content table-responsive">
+                                                <table class="table text-white" *ngIf="plans.length >0">
+                                                    <thead class="">
+                                                        <th>Exchange API</th>
+                                                        <th>Nick Name</th>                
+                                                        <th>Type</th>
+                                                        <th>Action</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let customer of plans">
+                                                            <td class="padding0">{{customer.exchangeName.exchangeapiName}}</td>
+                                                            <td class="padding0">{{customer.nickName}}</td> 
+                                                            <td class="padding0">{{customer.exchangeType}}</td>
+                                                            <td class="padding0 td-actions text-right">
+                                                                <a rel="tooltip" title="edit" class="btn btn-success btn-simple btn-xs" id="v-pills-editexchange-tab" data-toggle="pill" href="#v-pills-editexchange" role="tab" aria-controls="v-pills-editexchange" aria-selected="true" (click)="editPlan(customer)"><i class="fa fa-pencil"></i> </a>
+                                                                <a rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs" (click)="deletePlan(customer._id)">
+                                                                <i class="fa fa-trash-o"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="alert alert-warning" *ngIf="plans.length == 0">
+                                                <button type="button" aria-hidden="true" class="close">×</button>
+                                                <span> <b> No Data - </b> Exchange Account Empty Kindly create One</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- Add Exchange -->
+
+
+                                 <div class="tab-pane fade show" id="v-pills-addexchng" role="tabpanel" aria-labelledby="v-pills-addexchng-tab">
+                                    <div class="card profile-card">
+                                        <h4 class="card-header text-white">Add Exchanges</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <form  (ngSubmit)="planAdd()">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Nick Name<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control"  [(ngModel)]="nickName" name="nickName_1" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Exchange API<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                   <select   class="form-control" [(ngModel)]="exchangeName" name="exchangeName">
+                                                    {{exchangeName}}
+                                                        <option *ngFor="let exchangeName of exchangeNames" [ngValue]="exchangeName._id">{{exchangeName.exchangeapiName}}</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                 <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Exchange Type<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                   <select   class="form-control" [(ngModel)]="exchangeType" name="exchangeType">
+                                                        <option *ngFor="let exchangeType of exchangeTypes" [ngValue]="exchangeType">{{exchangeType}}</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">API key<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control"  [(ngModel)]="apiKey" name="apiKey" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Secret Key <span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="secretKey" name="secretKey" type="text">
+                                                    </div>
+                                                </div>                                                
+                                                <input class="tab-pane fade show" id="v-pills-exchange" class="btn btn-sm  btn-success" value="Update" type="submit"  >
+                                                <span class="float btn-sm btn-danger" style="padding: 7px 13px;"><a style="color:text-white" class="" id="v-pills-exchange-tab" data-toggle="pill" href="#v-pills-exchange" role="tab" aria-controls="v-pills-exchange" aria-selected="false">Cancel</a></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                   <!-- Edit Exchange -->
+
+                                <div class="tab-pane fade show" id="v-pills-editexchange" role="tabpanel" aria-labelledby="v-pills-editexchange-tab">
+                                    <div class="card profile-card">
+                                        <h4 class="card-header text-white">Edit Exchanges</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <form  (ngSubmit)="planUpdate()">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Nick Name<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control"  [(ngModel)]="nickName" name="nickName" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Exchange API<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                   <select   class="form-control" [(ngModel)]="exchangeName" name="exchangeName">
+                                                        <option *ngFor="let exchangeName of exchangeNames" [ngValue]="exchangeName._id">{{exchangeName.exchangeapiName}}</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                 <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Exchange Type<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                   <select   class="form-control" [(ngModel)]="exchangeType" name="exchangeType">
+                                                        <option *ngFor="let exchangeType of exchangeTypes" [ngValue]="exchangeType">{{exchangeType}}</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">API key<span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control"  [(ngModel)]="apiKey" name="apiKey" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label text-white">Secret Key <span>*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" [(ngModel)]="secretKey" name="secretKey" type="text">
+                                                    </div>
+                                                </div>                                                
+                                                <input class="tab-pane fade show" id="v-pills-exchange" class="btn btn-sm  btn-success" value="Update" type="submit">
+                                                <span class="float btn-sm btn-danger" style="padding: 7px 13px;"><a style="color:text-white" class="" id="v-pills-exchange-tab" data-toggle="pill" href="#v-pills-exchange" role="tab" aria-controls="v-pills-exchange" aria-selected="false">Cancel</a></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- For Plans -->
+                                <div class="tab-pane fade show" id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-plan-tab">
+                                    <div class="card profile-card change-password-card">
+                                        <h4 class="card-header text-white">Membership Plans</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <div class="card-content table-responsive">
+                                                <table class="table text-white" *ngIf="plansType.length >0">
+                                                    <thead class="">
+                                                        <th>Name</th>
+                                                        <th>Amount</th>
+                                                        <th>Validation</th>
+                                                        <th>Action</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let customer of plansType">
+                                                             <td class="padding0">{{customer.name}}</td>
+                                                              <td class="padding0">{{customer.amount}}</td>
+                                                              <td class="padding0">{{customer.planType}} Months</td>
+                                                            <td class="padding0 td-actions text-right">
+                                                                <a rel="tooltip" title="Buy" class="btn btn-danger btn-simple btn-xs" (click)="purchasePlan(customer)">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="alert alert-warning" *ngIf="plansType.length == 0">
+                                                <button type="button" aria-hidden="true" class="close">×</button>
+                                                <span> <b> No Data - </b> No Exchange Plans</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- for Account Detail -->
+                                <div class="tab-pane fade show" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                                    <div class="card profile-card change-password-card">
+                                        <h4 class="card-header text-white">My Account Detail</h4>
+                                        <div class="card-body  " >                                       
+                                           <!--  <flash-messages></flash-messages>       --> 
+                                            <div class="card-content table-responsive">
+                                                <table class="table text-white" *ngIf="accountplansType.length >0">
+                                                    <thead class="">
+                                                        <th>Plan Name</th>
+                                                        <th>Plan price</th>
+                                                        <th>Start End</th>
+                                                        <th>End Date</th>
+                                                        <th>Validation</th>
+                                                        <th>Status</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let customer of accountplansType">
+                                                             <td class="padding0">{{customer.plan.name}}</td>
+                                                             <td class="padding0">{{customer.plan.amount}}</td>
+                                                              <td class="padding0">{{customer.created_at | date: 'dd/MM/yyyy'}}</td>
+                                                              <td class="padding0">{{customer.expireddate | date: 'dd/MM/yyyy'}}</td>
+                                                              <td class="padding0">{{customer.plan.planType}} Months</td>
+                                                              <td class="padding0">{{customer.status}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="alert alert-warning" *ngIf="accountplansType.length == 0">
+                                                <button type="button" aria-hidden="true" class="close">×</button>
+                                                <span> <b> No Data - </b> No Exchange Plans</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- For setting -->
+                                <div class="tab-pane fade " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" >
+                                    <p class="text-white">Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur
+                                        nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

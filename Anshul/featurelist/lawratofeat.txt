@@ -1,0 +1,52 @@
+Admin
+Admin-Manage Users
+Admin-Manage Layers catagory
+Admin-Manage Layers
+Admin-Manage Services
+Admin-MAnage Questions
+Admin-Manage congifragion setting
+Admin-manage Requests
+Admin-Manage Star& Rating
+Admin-MAnage contact records
+Admin-Manage Guide and Articles
+Admin-Manage resources
+Admin-Manage Payment
+
+
+Manage home page with searching and layers details
+find a lawyer(like personal/family,corporate law)
+find a legaladvice(like question answered,Guides & Articles,other resources)
+search 
+resources
+legal services(Mutual Divorce,delay in flat Possession)
+register free and free ask question with lawyer
+login,register
+contact us
+static pages-About us,FAQs,About Us,Terms of Use,Privacy Policy,Payment, Refund & Cancellation Policy,Free Legal Aid
+lawyer login page 
+User login page
+Lawyer detail page
+Review & Rating
+Legal News Page
+Chat with admin popup
+
+
+Users
+
+User-login,logout,register,forget password
+user-manage lawyer
+user-dashboard
+user-manage profile
+user-manage Question/Answer
+user-manage setting
+user-manage paid Amount
+
+Lawyer
+
+Lawyer-login,logout,register,forget password
+Lawyer-dashboard
+Lawyer-manage profile
+Lawyer-manage Client
+Lawyer-manage Question/Answer
+Lawyer-manage setting
+Lawyer-manage Payment

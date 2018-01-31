@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Stacked form</h2>
+  <form>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">Nick Name <span>*</span></label>
+                <input formControlName="nickName" type="text" class="form-control">
+            </div>
+            <div *ngIf="formErrors.nickName" class="alert alert-danger">
+                {{ formErrors.nickName }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">Exchange API <span>*</span></label>
+                <select  formControlName="exchangeName" class="form-control">
+                    <option *ngFor="let exchangeName of exchangeNames" [value]="exchangeName">{{exchangeName}}</option>
+                </select>
+            </div>
+            <div *ngIf="formErrors.exchangeName" class="alert alert-danger">
+                {{ formErrors.exchangeName }}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">Exchange Type <span>*</span></label>
+                <select  formControlName="exchangeType" class="form-control">
+                    <option *ngFor="let exchangeType of exchangeTypes" [value]="exchangeType">{{exchangeType}}</option>
+                </select>
+            </div>
+            <div *ngIf="formErrors.exchangeType" class="alert alert-danger">
+                {{ formErrors.exchangeType }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">API key <span>*</span></label>
+                <input formControlName="apiKey" type="text" class="form-control">
+            </div>
+            <div *ngIf="formErrors.apiKey" class="alert alert-danger">
+                {{ formErrors.apiKey }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">Secret Key <span>*</span></label>
+                <input formControlName="secretKey" type="text" class="form-control">
+            </div>
+            <div *ngIf="formErrors.secretKey" class="alert alert-danger">
+                {{ formErrors.secretKey }}
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

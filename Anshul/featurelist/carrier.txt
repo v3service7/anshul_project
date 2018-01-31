@@ -1,0 +1,49 @@
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Companies Login
+Companies - Login/ Logout/ Forgot Password/ Change Password
+Companies - My Profile
+Companies - Upload Orders
+Companies - Tracking 
+Companies - Billing
+Companies - Rate calculation
+Companies - Download label/invoice
+Companies - setting
+Companies - Update order status 
+
+Agents Registration 
+Agents - Login/ Logout/ Forgot Password/ Change Password
+Agents - Customer detail
+Agents - Manage delievery price
+Agents - Manage delivery
+Agents - Update status
+Agents - MAnage invoices
+Agents - Report
+
+Agent/companies login
+carrier Companies detail page
+Product Tracking detail page  
+Contact Us with Captcha
+FAQs Section
+Static Pages like about us, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage States
+Admin - Manage Cities
+Admin - Manage Vendors
+Admin - Manage Agents
+Admin - Manage Orders
+Admin - Manage commision
+Admin - Manage order report
+Admin - Manage Invoice and billing
+Admin - View Payment Report
+Admin - Manage Website Global Settings like Commissions etc.
+Admin - Manage Content of Static pages like about us, How it works etc.

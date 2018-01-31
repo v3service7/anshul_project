@@ -1,0 +1,39 @@
+www.kyda.org
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration download form 
+Upload registration form
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My Bookings
+Customer - My Dentist 
+Customer - My schedule a visit
+
+
+Browse/Search Dentist based on city,zipcode,distance and types
+Membership plan listing page with benefits lists pages
+Events listing pages
+News pages
+Membership static page like benefits,overview,join kda
+for Dentists static page like find a dentist tutorial for members,pay your dues,the kentucky meeting,kda today,for new dentist etc
+for the public static pages like find a dentist,speclity licencse plan plate,resources,Smilekentucky
+Contactus page
+Static Pages like about us, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Cities
+Admin - Manage Customers
+Admin - Manage membership plan
+Admin - Manage Visits
+Admin - Manage Jobs
+Admin - Manage Website Global Settings
+Admin - Manage Contact
+Admin - Manage Content of Static pages like about us, How it works,for members,for public etc.

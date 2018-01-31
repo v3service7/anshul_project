@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Update Plan</h4>
+                <p class="category">Update plan for customer</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="planUpdate()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Plan Name <span>*</span></label>
+                                <input formControlName="name" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.name" class="alert alert-danger">
+                                {{ formErrors.name }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Amount <span>*</span></label>
+                                <input formControlName="amount" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.amount" class="alert alert-danger">
+                                {{ formErrors.amount }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Plan Type <span>*</span></label>
+                                <select  formControlName="planType" class="form-control">
+                                    <option value="">Select Plan </option>
+                                    <option value="3">Quaterly </option>
+                                    <option value="6">half yearly</option>
+                                    <option value="12">Annual</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.planType" class="alert alert-danger">
+                                {{ formErrors.planType }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="control-label"> Describe about this plan</label>
+                            <div class="form-group">
+                                <app-tinymce  formControlName="desc" ></app-tinymce>
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!planAddForm.valid">Update Plan</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

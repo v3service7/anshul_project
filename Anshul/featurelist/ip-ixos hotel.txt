@@ -1,0 +1,43 @@
+
+
+Front-end Section
+
+Home Page Design and Responsive HTML 
+Inside Page Template Design and Responsive HTML
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My Bookings
+Customer - My Account user deatial/guest detail
+Customer - My invoices  
+
+
+Browse/Search based on category and Location
+Home page 
+Rooms page with detail
+rooms detail page 
+Restaurant page and restaurant detail page 
+Manage Testimonial
+Bookig Process Select currency,language,date of arrival,date of depature,flag flex-date with tool tip,room type,enter number of adults and children
+Payment Process
+Generate invoice
+Contact Us page 
+Static Pages like about us, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Customers/Guest
+Admin - Manage Rooms 
+Admin - Manage Restaurant 
+Admin - Manage Testimonial
+Admin - Manage User Account
+Admin - Manage user invoices
+Admin - Manage Booking
+Admin - Manage Flex Date and Overlapping 
+Admin - View Payment Report
+Admin - Manage Website Global Settings like Commissions etc.
+Admin - Manage Content of Static pages like about us, How it works etc.

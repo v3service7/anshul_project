@@ -1,0 +1,15 @@
+1-Download swagger editor from https://github.com/swagger-api/swagger-editor.
+2-setup locally
+3-Open local url on cmd 
+4-run command npm install -g swagger for install swagger globaly
+5-run command npm install --save swagger-ui for install ui
+6-run command npm install --save swagger-ui-dist for install dist
+7-download jsonfile.run local setup project and open on browser and click on file and click download json.
+
+Setup swagger-ui-dist
+1-open swagger editor folder. 
+2-open node-modules folder.and search swagger-ui-dist folder.copy this folder and paste outside the node-modules folder.
+3-run on browser localhost/projectname/swagger-ui-dist 
+4-make a editor name folder inside the project and copy all folder inside project leave only swagger-ui-dist folder and paste inside the editor folder.
+5-Open swagger-ui-dist folder and select and cut all file and paste outside the swagger-ui-dist  folder and delete swagger-ui-distfolder.
+6-Inside the project Copy and paste downloaded swagger.json file and call in index.html file.

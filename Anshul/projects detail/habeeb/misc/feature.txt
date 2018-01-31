@@ -1,0 +1,35 @@
+﻿Customer Registration with Email/SMS verification
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - Manage Businesses
+Admin - Login/ Logout/ Forgot Password/ Change Password 
+Admin - Dashboard
+Admin - Manage Customers
+Admin - Manage Staffs
+Admin - Assign Customer to Staff
+Admin - Manage Services and Create API for Wordpress
+SMS Gateway Integration
+Testing
+
+
+Customer - My Dashboard
+Customer - My Account with Payment Report
+Customer - My Orders
+Customer - View Report based on Businesses 
+Customer - Manage Documents with Status (Sale/Purcahse/Service Invoice etc.)
+Payment Gateway Integration
+Admin - View Documents
+Admin - View Payment Report and Refund
+Admin - Manage Accounts of Customer based on Businesses
+Testing
+
+
+Staff Section
+Complete Testing of Web Application
+Android APP for Customers
+
+
+iOS APP for Customers
+Full Testing
+
+

@@ -1,0 +1,77 @@
+<div class="row">
+	<div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="orange">
+                <h4 class="title">Add Plan</h4>
+                <p class="category">Create plan for customer</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="planAdd()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Name <span>*</span></label>
+                                <input formControlName="name" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.name" class="alert alert-danger">
+                                {{ formErrors.name }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Amount</label>
+                                <input formControlName="amount" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.amount" class="alert alert-danger">
+                                {{ formErrors.amount }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="form-group label-floating">
+                                    <label class="control-label"> Describe about this plan</label>
+                                    <textarea class="form-control" formControlName="desc" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Type</label>
+                                <select formControlName="type" class="form-control">
+                                    <option>Select Type</option>
+                                    <option value="Small Business">Small Business</option>
+                                    <option value="Medium Business">Medium Business</option>
+                                    <option value="Large Business">Large Business</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.type" class="alert alert-danger">
+                                {{ formErrors.type }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Duration</label>
+                                <select formControlName="duration" class="form-control">
+                                    <option>Select Duration</option>
+                                    <option value="Month">Month</option>
+                                    <option value="Quarterly">Quarterly</option>
+                                    <option value="halfyerly">Halfyearly</option>
+                                    <option value="year">year</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.duration" class="alert alert-danger">
+                                {{ formErrors.duration }}
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning pull-right" [disabled]="!planAddForm.valid">Add Plan</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

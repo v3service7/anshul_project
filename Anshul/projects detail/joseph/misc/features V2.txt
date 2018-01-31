@@ -1,0 +1,59 @@
+Ref:		https://www.coinigy.com/
+Username:	business@v3xperts.com
+Password:	p@ssw0rd
+
+Trading view chart API 
+https://www.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/
+
+Front-end Section
+
+Home Page Design and responsive HTML
+Inside Page Template Design and responsive HTML
+
+User Registration
+User - Login/ Logout/ Forgot Password/ Change Password
+User - My Profile
+User - Purchase/Upgrade Membership
+User - My Account with Payment Report
+User - Manage Exchange Accounts with verification Process
+User - My Trade Stats
+User - My Alerts
+
+Display Market Data
+Set Alerts
+Buy/Sell Process of Trade based on Added Exchange Account
+Payment Gateway Integration for Membership
+Email Notification
+Contact Us with Captcha
+Static Pages like about us, how it works etc.
+5 Exchnage APIs Integration
+
+Back-end Admin Section
+
+Admin - Login/ Logout/ Forgot Password/ Change Password
+Admin - Manage Users
+Admin - Manage membership Plans
+Admin - Manage Master Exchange Accounts (Current 5)
+Admin - View Trade Stats of users (Sell/Buy)
+Admin - View Payment Report
+Admin - Manage Configuration Settings
+Admin - Manage Content of Static Pages like about us, how it works etc.
+
+
+Timeline 10 weeks 5K
+
+2 Months support after Live
+
+Milestones
+
+Advance Payment:	$1000
+
+Milestone 1:		$1000 (2.5 weeks)
+
+
+Milestone 2:		$1000 (2.5 weeks)
+Milestone 3:		$1000 (2.5 weeks)
+Milestone 4:		$1000 (2.5 weeks)
+
+
+

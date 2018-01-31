@@ -1,0 +1,47 @@
+<div class="wrapper wrapper-full-page">
+    <div class="full-page login-page" filter-color="black" data-image="../../assets/img/login.jpeg">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        <form [formGroup]="loginForm" (ngSubmit)="login()">
+                            <div class="card card-login">
+                                <div class="card-header text-center" data-background-color="green">
+                                    <h4 class="card-title">Customer Login</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div *ngIf="err != ''" class="alert alert-danger">
+                                        {{ err }}
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">email</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Email</label>
+                                            <input type="text" class="form-control" formControlName="email">
+                                        <span class="material-input"></span></div>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">lock_outline</i>
+                                        </span>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Password</label>
+                                            <input type="password" class="form-control" formControlName="password">
+                                        <span class="material-input"></span></div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <button class="btn btn-success btn-wd btn-lg progress-button" id="submitButton" [disabled]="!loginForm.valid">Let's go</button>
+                                    <a class="btn btn-success btn-simple btn-wd btn-lg" [routerLink]="['/customer/register']">Signup ?</a>
+                                    <a class="btn btn-success btn-simple btn-wd btn-lg" [routerLink]="['/customer/forget-password']">Forget Password ?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+rome2rio.com
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My History
+Customer - My save trip
+Customer - My Favourites
+Customer - My Payment methods
+
+
+Browse/Search hotels,flights,cars based on Location,check in date, check out date listing 
+Filter and Sort Option
+Hotels listing page with filter property class,propertyname,location,aminities,ambience,price
+hotel detail page
+Flights and train search page with map sand reach tome and distance 
+Cars search page with filter near by, capacity,picking up ,dropup pick up date, drop off page
+follow us page like facebook,twitter
+currency and language change section
+Static Pages like about us,careers,blog,FAQ's,help,How it works etc.
+live chat
+SEO Friendly URLs
+Mobile app
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Cities
+Admin - Manage State
+Admin - Manage Customers
+Admin - Manage Aminities
+Admin - Manage providers
+Admin - Manage Ambience
+Admin - Manage property type
+Admin - Manage Email & Alerts
+Admin - Manage Trips setting
+Admin - Manage Bookings
+Admin - Manage Hotels
+Admin - Manage Flights
+Admin - Manage cars
+Admin - Manage Payment Report
+Admin - Manage Review and rating
+Admin - Manage Content of Static pages like about us, How it works etc.

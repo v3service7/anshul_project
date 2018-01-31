@@ -1,0 +1,201 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Add Business</h4>
+                <p class="category">Create your Business Data</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="businessAddForm" (ngSubmit)="businessAdd()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Name of business*</label>
+                                <input formControlName="businessName" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.businessName" class="alert alert-danger">
+                                {{ formErrors.businessName }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Types of business Organisation</label>
+                                <select formControlName="typeOfOrg" class="form-control">
+                                    <option>Natural Person</option>
+                                    <option>Incorporated entity</option>
+                                    <option>Non-incorporated entity</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Trade License Number*</label>
+                                <input formControlName="tradeLicenseNumber" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.tradeLicenseNumber" class="alert alert-danger">
+                                {{ formErrors.tradeLicenseNumber }}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Issuing Authority</label>
+                                <input formControlName="issuingAuthority" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Trade License Expiry</label>
+                                <input formControlName="tradeLicenseExpiry" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.tradeLicenseExpiry" class="alert alert-danger">
+                                {{ formErrors.tradeLicenseExpiry }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">EMI Rate*</label>
+                                <select formControlName="emiRate" class="form-control">
+                                    <option>Dubai</option>
+                                    <option>Abu Dhabi</option>
+                                    <option>Ajman</option>
+                                    <option>Fujairah</option>
+                                    <option>UAQ</option>
+                                    <option>RAK</option>
+                                    <option>Sharjah</option>
+                                </select>
+                            </div>
+                            <div *ngIf="formErrors.emiRate" class="alert alert-danger">
+                                {{ formErrors.emiRate }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Phone*</label>
+                                <input formControlName="phoneNumber" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.phoneNumber" class="alert alert-danger">
+                                {{ formErrors.phoneNumber }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Name of Owner / Manager*</label>
+                                <input formControlName="ownerName" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.ownerName" class="alert alert-danger">
+                                {{ formErrors.ownerName }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Mobile Number*</label>
+                                <input formControlName="mobileNumber" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.mobileNumber" class="alert alert-danger">
+                                {{ formErrors.mobileNumber }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Passport Number*</label>
+                                <input formControlName="passportNumber" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.passportNumber" class="alert alert-danger">
+                                {{ formErrors.passportNumber }}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Nationality*</label>
+                                <input formControlName="nationality" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.nationality" class="alert alert-danger">
+                                {{ formErrors.nationality }}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Emirates ID Number*</label>
+                                <input formControlName="emiRateIdNumber" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.emiRateIdNumber" class="alert alert-danger">
+                                {{ formErrors.emiRateIdNumber }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Bank Name</label>
+                                <input formControlName="bankName" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Branch Name</label>
+                                <input formControlName="bankBranch" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Account Number</label>
+                                <input formControlName="bankAccountNumber" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Certificate of incorporation no</label>
+                                <input formControlName="certificateOfIncorporationNo" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">VAT TRN </label>
+                                <input formControlName="vattrn" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Select Plan*</label>
+                                <select formControlName="plan" class="form-control">
+                                    <option *ngFor="let plan of plans" [value]="plan._id">{{plan.type}} business - {{plan.name}} ({{plan.amount}}/{{plan.duration}})</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Optional Site visit package</label>
+                                <select formControlName="siteVisit" class="form-control" (change)="checkIsVisit()">
+                                    <option value="AED 0">No Site Visit Required(AED 0)</option>
+                                    <option value="AED 150">Site Visit Required(AED 150)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6" *ngIf="isVisit">
+                            <div class="form-group label-floating" >
+                                <label class="control-label">Number of days required</label>
+                                <input formControlName="noDaysRequired" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!businessAddForm.valid">Add Business</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

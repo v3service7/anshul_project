@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Upload County Csv</h4>
+                <p class="category">Create a new counties</p>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <input #fileInput type="file" >
+                    <a href="javascript:void(0)" class="btn btn-success btn-round btn">Upload County Csv File</a>
+                </div>
+                <button (click)="addFile()" class="btn btn-success pull-right">Add</button>
+            </div>
+        </div>
+    </div>
+</div>

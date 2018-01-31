@@ -1,0 +1,41 @@
+thehomemag.com
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - Get Listed
+Customer - My Favourites
+Customer - My Media kit
+
+Browse/Search Mag based on professional in area
+Professional listing page 
+Filter and Sort Option
+Professional Detail Page
+Media kit listing page 
+Advertise with us listing page 
+Digital Mag listing page
+DEals detail page 
+Review & Rating
+Static Pages like about us,privacy policy,terms and conditions,careers,media kit etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password
+Admin - Manage Categories and Sub-Categories
+Admin - Manage Cities
+Admin - Manage Customers
+Admin - Manage Deals
+Admin - Manage media kit
+Admin - Manage Professional 
+Admin - Manage advertise 
+Admin - Manage digital mag 
+Admin - Manage Review & Rating
+Admin - Manage Website Global Settings like Commissions etc.
+Admin - Manage Content of Static pages like about us, privacy policy,terms and conditions,careers,media kit etc.

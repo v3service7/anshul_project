@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Update Plan</h4>
+                <p class="category">Update plan for customer</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="planUpdate()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Name <span>*</span></label>
+                                <input formControlName="name" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.name" class="alert alert-danger">
+                                {{ formErrors.name }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Amount</label>
+                                <input formControlName="amount" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.amount" class="alert alert-danger">
+                                {{ formErrors.amount }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="control-label"> Describe about this plan</label>
+                                    <textarea class="form-control" formControlName="desc" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!planAddForm.valid">Update Plan</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

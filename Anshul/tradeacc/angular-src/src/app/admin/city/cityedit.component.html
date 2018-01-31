@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Update City</h4>
+                <p class="category">Update City for customer</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="cityAddForm" (ngSubmit)="cityUpdate()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">City Name <span>*</span></label>
+                                <input formControlName="cityname" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.cityname" class="alert alert-danger">
+                                {{ formErrors.cityname }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">State</label>
+                                <input formControlName="state" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.state" class="alert alert-danger">
+                                {{ formErrors.state }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="control-label"> Describe about this City</label>
+                                    <textarea class="form-control" formControlName="description" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!cityAddForm.valid">Update City</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

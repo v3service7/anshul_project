@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Update City</h4>
+                <p class="category">Update City</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="cityUpdate()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">City Name <span>*</span></label>
+                                <input formControlName="cityName" type="text" class="form-control" autofocus>
+                            </div>
+                            <div *ngIf="formErrors.cityName" class="alert alert-danger">
+                                {{ formErrors.cityName }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">State</label>
+                                <input formControlName="state" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.state" class="alert alert-danger">
+                                {{ formErrors.state }}
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!planAddForm.valid">Update City</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

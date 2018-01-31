@@ -1,0 +1,51 @@
+bylyngo.com
+
+Front-end Section
+
+Home Page Design and Responsive HTML compatible to Mobile
+Mobile App
+Inside Page Template Design and Responsive HTML compatible to Mobile
+
+Customer Registration 
+Customer - Login/ Logout/ Forgot Password/ Change Password
+Customer - My Profile
+Customer - My schedule an interpreter
+Customer - My Appointments
+Customer - My view upcoming session and book session
+Customer - View all sessions
+Customer - Request Document Translation
+Customer - View Translations
+Customer - My Deposit Fund 
+Customer - My Withdraw funds 
+Customer - My financial Transactions
+Customer - My Notifications 
+Customer - View and createTickets and search by subject and sort by
+
+Browse/Search interpreter based on services and language
+About Us and location list
+interpreting services with Quickconnect,legal inpreting,video interpreting ,phone interpreting and video interpreting services section 
+translation services with document translation,certified translation and free translation services section
+Book services and schedule 
+Bookig Process
+Static Pages like about us,Terms and Conditions,Privacy Policy, How it works etc.
+SEO Friendly URLs
+
+
+Back-end Admin Panel
+
+Admin - Login/ Logout/ Forgot Password/change password
+Admin - Manage Cities
+Admin - Manage state
+Admin - Manage interpreter request
+Admin - Manage Appointments 
+Admin - Manage Customers
+Admin - Manage document Transactions request
+Admin - Manage Tickets
+Admin - Manage interpreting and translation Services
+Admin - Manage session and book session
+Admin - Manage Funds
+Admin - Manage locations
+Admin - Manage request quote
+Admin - Manage contact
+Admin - Manage request translation quote
+Admin - Manage Content of Static pages like about us,Terms and Conditions,Privacy Policy, How it works etc.

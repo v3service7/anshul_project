@@ -1,0 +1,104 @@
+<div class="wrapper">
+	<app-admin-sidebar></app-admin-sidebar>
+	<div class="main-panel">
+		<app-admin-header></app-admin-header>
+        <div class="content">
+            <div class="container-fluid">
+            	<div class="row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header" data-background-color="orange">
+                                    <h4 class="title">Edit Profile</h4>
+                                    <p class="category">Complete your profile</p>
+                                </div>
+                                <div class="card-content">
+                                    <form [formGroup]="customerAddForm" (ngSubmit)="adminUpdate()">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Fist Name</label>
+                                                    <input formControlName="firstname" type="text" class="form-control" autofocus>
+                                                </div>
+                                                <div *ngIf="formErrors.firstname" class="alert alert-danger">
+                                                    {{ formErrors.firstname }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Last Name</label>
+                                                    <input formControlName="lastname" type="text" class="form-control">
+                                                </div>
+                                                <div *ngIf="formErrors.lastname" class="alert alert-danger">
+                                                    {{ formErrors.lastname }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Email address</label>
+                                                    <input formControlName="email" type="email" class="form-control">
+                                                </div>
+                                                <div *ngIf="formErrors.email" class="alert alert-danger">
+                                                    {{ formErrors.email }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Username</label>
+                                                    <input formControlName="username" type="text" class="form-control">
+                                                </div>
+                                                <div *ngIf="formErrors.username" class="alert alert-danger">
+                                                    {{ formErrors.username }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-warning pull-right" [disabled]="!customerAddForm.valid">Save Customer</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="content">
+                                    <h6 class="category text-gray">Change Password</h6>
+                                    <form [formGroup]="cpForm" (ngSubmit)="adminChangePassword()">
+                                        <div class="card-content">
+                                            <div *ngIf="err !=''" class="alert alert-danger">
+                                                {{err}}
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Password</label>
+                                                    <input formControlName="password" type="password" class="form-control">
+                                                </div>
+                                                <div *ngIf="formErrors.password" class="alert alert-danger">
+                                                    {{ formErrors.password }}
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">New Password</label>
+                                                    <input formControlName="newpassword" type="password" class="form-control">
+                                                </div>
+                                                <div *ngIf="formErrors.newpassword" class="alert alert-danger">
+                                                    {{ formErrors.newpassword }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-warning btn-round" [disabled]="!cpForm.valid">Change Password</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>

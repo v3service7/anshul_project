@@ -1,0 +1,69 @@
+{
+	"firstName": "rahul",
+	"middleName": "kumar",
+	"lastName": "sharma",
+	"nickname":"rakesh",
+    "residenceAddress" : "afag",
+    "mailingAddress" : "abc@gamo.com",
+    "policeService" :  {"unitName": "hk", "startYear":"2010-02-20", "endYear":"2010-02-20"},
+    "militaryService" : { "unitName": "ghgf", "startYear":"1String", "endYear":"1String"},
+    "phones" : [{ 
+                    "phoneNumber": "123322",
+                    "phonetype": "1String"
+                    }],
+    "emails" : [{ 
+                    "emailAddress": "424",
+                    "emailtype": "1String"
+                    }],
+    "guardCards":[{
+                    "guardCardNumber":"121", 
+                    "expirationDate":"12", 
+                    "state":"1231"
+                    }],
+	"exposedPermits":[{
+                    "permitNumber"  : "12",
+                    "state":  "Hapur",
+                    "expirationDate":  "2013-04-01",
+                    "calibers"  : "1String",
+                    "notes"  : "2String"
+                    },{
+                    "permitNumber"  : "12",
+                    "state":  "Hapur",
+                    "expirationDate":  "2013-04-01",
+                    "calibers"  : "1String",
+                    "notes"  : "2String"
+                    }],
+    "ccws":[{"ccwNumber":"123","issuingAgency":"abc","issueDate":"2017-04-26","city":"Alameda"}],
+    "weapons":[{ 
+		    "serialNumber": "fgjf",
+		    "model":"6String",
+		    "maker":"1String",
+		    "caliber":"gdh"
+		    }],  
+    "securityAssignments":["Funeralmff"],
+    "credentials": [{
+					"certificate":"CPR",
+    				"issueDate" : "2014-10-01",
+                    "expirationDate" : "2014-10-01",
+                    "state" : "rbfwgb",
+                    "school" : "2String",
+                    "comments" : "1String"
+                  }],
+    "notes": "Array",
+    "skills":["hjh"],
+    "interviewDate" : "2013-04-01", 
+    "orientationDate" : "2013-04-01",
+    "hasCar" : "true",
+    "isOwl" : "true",    
+    "role" : "Employee",
+    "entryTime" : "12",
+    
+    "isActive": "false",
+    "isContractor": "false",
+    "inEventsRoster": "false",
+    "isIndependent": "false",
+
+    "reason":"4String",
+    "isParmanent":"false"
+	
+}

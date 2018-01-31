@@ -1,0 +1,32 @@
+<div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
+    <div class="logo"><a [routerLink]="['/admin/dashboard']" class="simple-text">Admin Panel </a></div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/admin/dashboard']">
+                    <i class="material-icons">dashboard</i>
+                    <p>Dashboard</p>
+                </a>
+            </li>  
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/admin/city/']">
+                    <i class="material-icons">business_center</i>
+                    <p>Manage City</p>
+                </a>
+            </li>          
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/admin/county/']">
+                    <i class="material-icons">business_center</i>
+                    <p>Manage County</p>
+                </a>
+            </li>           
+            
+            <li class="active active-pro">
+                <a href="javascript:void(0)" (click)="onLogoutClick()" >
+                    <i class="material-icons">power_settings_new</i>
+                    <p>Logout</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

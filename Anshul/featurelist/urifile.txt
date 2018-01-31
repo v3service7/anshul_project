@@ -1,0 +1,50 @@
+Just to make sure there are no confusions. The are some sub-fields that are required if their parent 
+fields is not null. For example, if the officer has a CCW then expirationDate is required field. However, 
+that does not mean that it could be that the CCW list itself is null (officer has no CCWs)
+I meant to say: "that does not mean that it couldn't be that the CCW list itself...". (CCW list can be null)
+
+
+
+{
+	"firstName" : "Ansh",
+	"lastName" : "Gupta",	
+	"phones":[{"phoneNumber":"981826", "phonetype":"Mobile"}],
+	"emails": [{"emailAddress":"a@a.com", "emailtype":"work"}],
+	"policeService" :  {"unitName": "Police 5"},
+	"militaryService": {"unitName": "Military 5"},
+	"guardCards":[{"guardCardNumber":"g2", "state":"CA", "expirationDate":"2017-04-26"}],
+	"exposedPermits":[{"permitNumber":"permit 1", "state":"CA"}],
+	"mailingAddress" : {"street":"vivek vihar", "city":"59a8f2b4d7f3d60ed4f53aef", "zipCode":"245101"},
+	"residenceAddress" : {"street":"tehsil", "city":"59a8f2b4d7f3d60ed4f53aef", "zipCode":"333"},
+	"securityAssignments":["Funeral","Funeral"],
+	"skills":["Services Providers"],
+	"credentials":[{"certificate":"CPR"}],
+	"ccws":[{"ccwNumber":"222","issuingAgency":"abc1","issueDate":"2017-04-26","city":"Alameda"}],
+	"weapons":[{"serialNumber":"123","caliber":"abc"}],
+	"isActive":true,
+	"isContractor":false,
+	"inEventsRoster":true,
+	"notes": [{ "content": "Close talker" },{ "content": null },{ "content": "Make a lot of bad jokes" }]
+	}
+{
+	"firstName" : "Ansh12",
+	"lastName" : "Gupta12",	
+	
+	"emails": [{"emailAddress":"a12@a.com", "emailtype":"work"}],
+	"policeService" :  {"unitName": "Police 5"},
+	"militaryService": {"unitName": "Military 5"},
+	"guardCards":[{"guardCardNumber":"g2", "state":"CA", "expirationDate":"2017-04-26"}],
+	"exposedPermits":[{"permitNumber":"permit 1", "state":"CA"}],
+	"mailingAddress" : {"street":"vivek vihar", "city":"59a8f2b4d7f3d60ed4f53aef", "zipCode":"245101"},
+	"residenceAddress" : {"street":"tehsil", "city":"59a8f2b4d7f3d60ed4f53aef", "zipCode":"333"},
+	"securityAssignments":["Funeral","Funeral"],
+	"skills":["Services Providers"],
+	"credentials":[{"certificate":"CPR"}],
+	"ccws":[{"ccwNumber":"222","issuingAgency":"abc1","issueDate":"2017-04-26","city":"Hapur"}],
+	"weapons":[{"serialNumber":"123","caliber":"abc"}],
+	"isActive":true,
+	"isContractor":false,
+	"inEventsRoster":true,
+	"isIndependent":true,
+	"notes": [{ "content": "Close talker" },{ "content": null },{ "content": "Make a lot of bad jokes" }]
+	}

@@ -1,0 +1,44 @@
+<div class="card card-nav-tabs">
+    <div class="card-header" data-background-color="green">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <span class="nav-tabs-title">User</span>
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active pull-right">
+                        <a  [routerLink]="['/admin/user/add/']">
+                            <i class="material-icons">exposure_plus_1</i> Add Customer
+                            <div class="ripple-container"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-content table-responsive">
+        <table class="table" *ngIf="customers.length >0">
+            <thead class="text-success">
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers">
+                    <td class="padding0">{{customer.firstname}} {{customer.lastname}}</td>
+                    <td class="padding0">{{customer.phonenumber}}</td>
+                    <td class="padding0 td-actions text-right">
+                        <a [routerLink]="['/admin/user/',customer._id]" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs" (click)="deleteCustomer(customer._id)">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="alert alert-info" *ngIf="customers.length == 0">
+            <button type="button" aria-hidden="true" class="close">×</button>
+            <span> <b> No Data - </b> User Empty Kindly create One"</span>
+        </div>
+    </div>
+</div>

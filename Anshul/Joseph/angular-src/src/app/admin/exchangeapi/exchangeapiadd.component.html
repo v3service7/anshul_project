@@ -1,0 +1,37 @@
+<div class="row">
+	<div class="">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Add Exchange API</h4>
+                <p class="category">Create Exchange API for user</p>
+            </div>
+            <div class="card-content">
+                <form [formGroup]="planAddForm" (ngSubmit)="planAdd()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Exchange Api Name <span>*</span></label>
+                                <input formControlName="exchangeapiName" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.exchangeapiName" class="alert alert-danger">
+                                {{ formErrors.exchangeapiName }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Exchange API Url<span>*</span></label>
+                                <input formControlName="exchangeUrl" type="text" class="form-control">
+                            </div>
+                            <div *ngIf="formErrors.exchangeUrl" class="alert alert-danger">
+                                {{ formErrors.exchangeUrl }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success pull-right" [disabled]="!planAddForm.valid">Add Exchange API</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
